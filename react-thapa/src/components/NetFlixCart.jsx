@@ -35,7 +35,7 @@
     };
   
   
-// export default   NetFlixCart;    // this  default export 
+// export default   NetFlixCart; ...0    // this  default export 
 
 
 export const Footer=()=>

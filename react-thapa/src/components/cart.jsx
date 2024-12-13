@@ -1,6 +1,8 @@
 // component   
 import Data  from "../api/Data.json"
 import { InfoCard } from "./InfoCard"
+import styles from "../components/netflix.module.css"; 
+  
     // const NetFlixCart=()=>
     // {
        
@@ -35,12 +37,12 @@ import { InfoCard } from "./InfoCard"
      const NetFlixCart=()=>
      {
         return(
-            <ul>
+            <ul className={styles.flexes}>
                 {
                     Data.map((curntElment)=>
                     {
                          return(
-                         <InfoCard key={curntElment.id} curntElment={curntElment} />
+                         <InfoCard key={curntElment.id} data={curntElment} />
                          
                          );
                          console.log(curntElment);
